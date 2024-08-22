@@ -1,0 +1,34 @@
+<div class="dt-main-form-wrapper">
+    <form class="dt-main-form">
+        <div class="input-group">
+            <div class="input-box">
+                <label class="form-label" for="title">Título</label>
+                <input type="text" id="title">
+            </div>
+            <div class="input-radio-box-container">
+                <div class="input-radio-box-title-container">
+                    <h3 class="input-radio-box-title form-label">Categoria</h3>
+                </div>
+                <div class="input-radio-box">
+                    @for (datetype of datetypes; track datetype.name; let i = $index) {
+                        <div class="radio-container">
+                            <input type="radio" [id]="datetype.name" name="date-type">
+                            <label [for]="datetype.name">{{ datetype.name }}</label>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="dt-datepicker" class="form-label">Quando?</label>
+                    <ngbd-datepicker-popup></ngbd-datepicker-popup>
+
+                </div>
+                <div class="input-box">
+                    <label for="" class="form-label">Onde?</label>
+                    <input type="text" id="where">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

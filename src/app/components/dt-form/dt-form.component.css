@@ -1,0 +1,78 @@
+/* FORM CSS */
+
+.dt-main-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 3rem auto;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: .3rem .3rem .7rem .5rem rgba(214, 205, 205, 0.288);
+    padding: 1.5rem;
+    background-color: #F9F6EE;
+}
+
+.dt-main-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: var(--form-label-font-size);
+    font-weight: var(--form-label-font-weight);
+    margin-bottom: var(--standard-margin);
+    color: var(--secondary-color);
+}
+
+/* INPUT GROUP CSS */
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+/* INPUT TEXT CSS */
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-box input {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: .1rem .1rem .2rem .1rem lightgray;
+    padding: .7rem;
+    outline: var(--secondary-color);
+    width: 100%;
+    background-color: var();
+}
+
+/* INPUT RADIO CSS */
+
+.input-radio-box-title-container {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.input-radio-box {
+    display: flex;
+}
+
+.radio-container {
+    display: flex;
+    margin-right: .6rem;
+}
+
+.radio-container input {
+    margin-right: .3rem;
+    background-color: var(--main-color);
+}
+
+.radio-container label {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
